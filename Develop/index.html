@@ -37,10 +37,10 @@
           <p>One of three columns</p>
         </div>
         <div class="col-md-10 border border-dark">
-          <input type="text" class="form-control" placeholder="Username">
+          <input id="plannedActionValue" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="col-md-1 border border-secondary">
-          <button type="button" class="btn btn-info">Add</button>
+          <button id="add"  class="btn btn-info">Add</button>
         </div>
       </div>
     </div>
@@ -53,6 +53,16 @@
       var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
       console.log(currentDate);
       $("#dateTime").append(currentDate);
+
+      var plannedAction = "";
+      function addEventToLocalStorage() {
+        plannedAction = $("#plannedActionValue").val();
+        console.log(plannedAction);
+        }
+      
+      $("#add").click(function() {
+        addEventToLocalStorage()
+      })
     </script>
   </body>
 </html>
