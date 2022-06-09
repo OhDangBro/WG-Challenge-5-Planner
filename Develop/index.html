@@ -1,98 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-    <div class="container">
-      <h2>WORK DAY</h2>
-      <p id="dateTime"></p>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <div class="row timeSlot">
-        <div class="col-md-1 border border-primary timeOfPersonalEvent">
-          <p>One of three columns</p>
-        </div>
-        <div class="col-md-10 border border-dark personalEvent">
-          <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
-        </div>
-        <div class="col-md-1 border border-secondary">
-          <button  class="btn btn-info addButton" data-target="0">Add</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+  <div class="container">
+    <h2>WORK DAY</h2>
+    <p id="dateTime"></p>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+
+    <!--9-->
+    <div class="row timeSlot">
+      <div class="col-md-1 border border-primary timeOfPersonalEvent">
+        <p>9</p>
+      </div>
+      <div class="col-md-10 border border-dark personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+      </div>
+      <div class="col-md-1 border border-secondary">
+        <button class="btn btn-info addButton" data-target="0">Add</button>
       </div>
     </div>
-    <div class="container">
-      <div class="row timeSlot">
-        <div class="col-md-1 border border-primary timeOfPersonalEvent">
-          <p>One of three columns</p>
-        </div>
-        <div class="col-md-10 border border-dark personalEvent">
-          <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
-        </div>
-        <div class="col-md-1 border border-secondary">
-          <button   class="btn btn-info addButton" data-target="1">Add</button>
-        </div>
-      </div>
+  
+ <!-- 10--->
+  <div class="row timeSlot">
+    <div class="col-md-1 border border-primary timeOfPersonalEvent">
+      <p>10</p>
     </div>
-       
+    <div class="col-md-10 border border-dark personalEvent">
+      <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="col-md-1 border border-secondary">
+      <button class="btn btn-info addButton" data-target="1">Add</button>
+    </div>
+  </div>
     
+ <!-- 11--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>11</p>
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
+ <!-- 12--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>12</p>
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
+ <!-- 1--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>1</p>
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
+ <!-- 2--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>2</p>
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
+ <!-- 3--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>3</p>
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
+ <!-- 4--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>4</p>
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
+ <!-- 5--->
+ <div class="row timeSlot">
+  <div class="col-md-1 border border-primary timeOfPersonalEvent">
+    <p>5
+  </div>
+  <div class="col-md-10 border border-dark personalEvent">
+    <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+  </div>
+  <div class="col-md-1 border border-secondary">
+    <button class="btn btn-info addButton" data-target="1">Add</button>
+  </div>
+</div>
+  
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
 
-      //Variable holds the current date
-      var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
-      // console.log(currentDate);
-      $("#dateTime").append(currentDate);
 
-      //Variable that takes the input
-      var plannedAction = "";
-      var timeSlots = [];
-      $(".timeSlot").each(function(index,element) {
-        timeSlots.push(element);
-        // console.log(timeSlots);
-      })
-      function addEventToLocalStorage(buttonValue) {
-        console.log($(this))
-        
-        var currentButtonValue = buttonValue.dataset.target;
-        var plannedAction = timeSlots[currentButtonValue].children[1].children[0].value;
-       console.log(plannedAction)
-        localStorage.setItem(currentButtonValue,plannedAction);
-        }
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script>
 
+    //Variable holds the current date
+    var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+    // console.log(currentDate);
+    $("#dateTime").append(currentDate);
+
+    //Variable that takes the input
+    var plannedAction = "";
+    var timeSlots = [];
+    $(".timeSlot").each(function (index, element) {
+      timeSlots.push(element);
+      // console.log(timeSlots);
+    })
+    function addEventToLocalStorage(buttonValue) {
       
-      
-        //Listener Event for Add
-      $(".addButton").click(function() {
-        addEventToLocalStorage(this)
-      })
-    </script>
-  </body>
+
+      var currentButtonValue = buttonValue.dataset.target;
+      var plannedAction = timeSlots[currentButtonValue].children[1].children[0].
+      value;
+      console.log(plannedAction)
+      var plannedTime = timeSlots[currentButtonValue].children[0].children[0].textContent
+      console.log(plannedTime)
+      localStorage.setItem(currentButtonValue, plannedAction);
+
+    }
+
+
+
+    //Listener Event for Add
+    $(".addButton").click(function () {
+      addEventToLocalStorage(this)
+    })
+  </script>
+</body>
+
 </html>
 
 
@@ -111,4 +200,14 @@ THEN I can enter an event
 WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
-THEN the saved events persist -->
+THEN the saved events persist
+
+USE MOMENT JS TO SEE IF TIMEBLOCK HAS PASSED
+CHANGE BACKGROUND COLOR
+
+MAKE FUNCTION SO ONLOAD IT BRINGS UP THE TEXT VALUES FROM THE LOCAL STORAGE (ITS CALLED .READY())
+
+CONSOLE LOG INDEX OF TIME
+
+
+-->
