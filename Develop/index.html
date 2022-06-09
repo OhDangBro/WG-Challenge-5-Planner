@@ -51,7 +51,7 @@
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
   </div>
   <div class="col-md-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="0">Save</button>
+    <button class="btn btn-info  addButton" data-target="1">Save</button>
   </div>
 </div>
 
@@ -66,7 +66,7 @@
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
   </div>
   <div class="col-md-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="0">Save</button>
+    <button class="btn btn-info  addButton" data-target="2">Save</button>
   </div>
 </div>
 
@@ -81,7 +81,7 @@
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
   </div>
   <div class="col-md-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="0">Save</button>
+    <button class="btn btn-info  addButton" data-target="3">Save</button>
   </div>
 </div>
 
@@ -96,7 +96,7 @@
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
   </div>
   <div class="col-md-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="0">Save</button>
+    <button class="btn btn-info  addButton" data-target="4">Save</button>
   </div>
 </div>
 
@@ -111,7 +111,7 @@
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
   </div>
   <div class="col-md-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="0">Save</button>
+    <button class="btn btn-info  addButton" data-target="5">Save</button>
   </div>
 </div>
 
@@ -125,7 +125,7 @@
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
   </div>
   <div class="col-md-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="0">Save</button>
+    <button class="btn btn-info  addButton" data-target="6">Save</button>
   </div>
 </div>
 
@@ -138,7 +138,7 @@
         <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
       </div>
       <div class="col-md-1 border bg-warning  border-secondary">
-        <button class="btn btn-info  addButton" data-target="0">Save</button>
+        <button class="btn btn-info  addButton" data-target="7">Save</button>
       </div>
     </div>
   
@@ -153,7 +153,7 @@
       <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
     </div>
     <div class="col-md-1 border bg-warning  border-secondary">
-      <button class="btn btn-info  addButton" data-target="0">Save</button>
+      <button class="btn btn-info  addButton" data-target="8">Save</button>
     </div>
   </div>
 
@@ -202,7 +202,7 @@
 
     $(timeSlots).each(function(index, element){
       var timeofPersonalEvent = element.children[0].children[0];
-      var currentHour = moment().format("h");
+      var currentHour = moment().format("hh");
      
       if (parseInt(timeofPersonalEvent.textContent) < currentHour) {
        $(timeofPersonalEvent).addClass("past")
@@ -220,36 +220,41 @@
     //Listener Event for Add
     $(".addButton").click(function () {
       addEventToLocalStorage(this)
+      // console.log(this)
     })
+
+    
+    
+
   </script>
 </body>
 
 </html>
 
 
-<!-- AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+// <!-- AS AN employee with a busy schedule
+// I WANT to add important events to a daily planner
+// SO THAT I can manage my time effectively
 
-GIVEN I am using a daily planner to create a schedule
+// GIVEN I am using a daily planner to create a schedule
 
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+// WHEN I scroll down
+// THEN I am presented with time blocks for standard business hours
+// WHEN I view the time blocks for that day
+// THEN each time block is color-coded to indicate whether it is in the past, present, or future
+// WHEN I click into a time block
+// THEN I can enter an event
+// WHEN I click the save button for that time block
+// THEN the text for that event is saved in local storage
+// WHEN I refresh the page
+// THEN the saved events persist
 
-USE MOMENT JS TO SEE IF TIMEBLOCK HAS PASSED
-CHANGE BACKGROUND COLOR
+// USE MOMENT JS TO SEE IF TIMEBLOCK HAS PASSED
+// CHANGE BACKGROUND COLOR
 
-MAKE FUNCTION SO ONLOAD IT BRINGS UP THE TEXT VALUES FROM THE LOCAL STORAGE (ITS CALLED .READY())
+// MAKE FUNCTION SO ONLOAD IT BRINGS UP THE TEXT VALUES FROM THE LOCAL STORAGE (ITS CALLED .READY())
 
-CONSOLE LOG INDEX OF TIME
+// CONSOLE LOG INDEX OF TIME
 
 
--->
+// -->
