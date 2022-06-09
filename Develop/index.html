@@ -77,13 +77,12 @@
         // console.log(timeSlots);
       })
       function addEventToLocalStorage(buttonValue) {
+        console.log($(this))
         
         var currentButtonValue = buttonValue.dataset.target;
-       console.log(timeSlots[currentButtonValue])
-
-        // plannedAction = $(".plannedActionValue").val();
-        // // console.log(plannedAction);
-        // localStorage.setItem("event",plannedAction);
+        var plannedAction = timeSlots[currentButtonValue].children[1].children[0].value;
+       console.log(plannedAction)
+        localStorage.setItem(currentButtonValue,plannedAction);
         }
 
       
