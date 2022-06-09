@@ -193,7 +193,7 @@
       var plannedAction = timeSlots[currentButtonValue].children[1].children[0].
       value;
       console.log(plannedAction)
-      var plannedTime = timeSlots[currentButtonValue].children[0].children[0].text
+      var plannedTime = timeSlots[currentButtonValue].children[0].children[0].textContent
       console.log(plannedTime)
       localStorage.setItem(currentButtonValue, plannedAction);
 
@@ -202,7 +202,7 @@
 
     $(timeSlots).each(function(index, element){
       var timeofPersonalEvent = element.children[0].children[0];
-      var currentHour = moment().format("hh");
+      var currentHour = moment().format("HH");
      
       if (parseInt(timeofPersonalEvent.textContent) < currentHour) {
        $(timeofPersonalEvent).addClass("past")
