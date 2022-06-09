@@ -12,229 +12,253 @@
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Scheduler</title>
   <div class="container">
-    
+
 </head>
 
-<body class="color $cyan-200">
+<body class="color bg-info">
   <header class="jumbotron">
     <h1 class="display-3 bg-warning border-primary font-weight-bold rounded-pill text-center  ">Work Day Scheduler</h1>
-    <p class="lead bg-warning border-primary font-weight-bold rounded-pill text-center ">Your Daily Work Day in Military Time</p>
-    
+    <p class="lead bg-warning border-primary font-weight-bold rounded-pill text-center ">Your Daily Work Day in Military
+      Time</p>
+
     <p id="dateTime"></p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container">
-
-  
+  <div class="container bg-info ">
 
 
-  <!--Time Slot Start-->
-  <div class="row timeSlot">
-    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-      <p class="text-center">9</p>
+
+
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">9</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="0">Save</button>
+      </div>
     </div>
-    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-      <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+
+    <!--End time slot-->
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">10</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="1">Save</button>
+      </div>
     </div>
-    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-      <button class="btn btn-info  addButton" data-target="0">Save</button>
+
+    <!--End time slot-->
+
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">11</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="2">Save</button>
+      </div>
     </div>
-  </div>
 
-<!--End time slot-->
- <!--Time Slot Start-->
- <div class="row timeSlot">
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-    <p class="text-center">10</p>
-  </div>
-  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-    <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
-  </div>
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="1">Save</button>
-  </div>
-</div>
+    <!--End time slot-->
 
-<!--End time slot-->
-
- <!--Time Slot Start-->
-  <div class="row timeSlot">
-    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-      <p class="text-center">11</p>
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">12</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="3">Save</button>
+      </div>
     </div>
-    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-      <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+
+    <!--End time slot-->
+
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">13</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="4">Save</button>
+      </div>
     </div>
-    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-      <button class="btn btn-info  addButton" data-target="2">Save</button>
+
+    <!--End time slot-->
+
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">14</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info d-inline addButton" data-target="5">Save</button>
+      </div>
     </div>
-  </div>
 
-<!--End time slot-->
-
- <!--Time Slot Start-->
- <div class="row timeSlot">
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-    <p class="text-center">12</p>
-  </div>
-  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-    <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
-  </div>
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="3">Save</button>
-  </div>
-</div>
-
-<!--End time slot-->
-
- <!--Time Slot Start-->
- <div class="row timeSlot">
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-    <p class="text-center">13</p>
-  </div>
-  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-    <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
-  </div>
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="4">Save</button>
-  </div>
-</div>
-
-<!--End time slot-->
-
- <!--Time Slot Start-->
- <div class="row timeSlot">
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-    <p class="text-center">14</p>
-  </div>
-  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-    <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
-  </div>
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="5">Save</button>
-  </div>
-</div>
-
-<!--End time slot-->
- <!--Time Slot Start-->
- <div class="row timeSlot">
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-    <p class="text-center">15</p>
-  </div>
-  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-    <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
-  </div>
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="6">Save</button>
-  </div>
-</div>
-
-<!--End time slot--> <!--Time Slot Start-->
-<div class="row timeSlot">
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-    <p class="text-center">16</p>
-  </div>
-  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-    <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
-  </div>
-  <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-    <button class="btn btn-info  addButton" data-target="7">Save</button>
-  </div>
-</div>
-  
- <!--End time slot-->
-
-  <!--Time Slot Start-->
-  <div class="row timeSlot">
-    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
-      <p class="text-center">17</p>
+    <!--End time slot-->
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">15</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="6">Save</button>
+      </div>
     </div>
-    <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
-      <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+
+    <!--End time slot-->
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">16</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="7">Save</button>
+      </div>
     </div>
-    <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
-      <button class="btn btn-info  addButton" data-target="7">Save</button>
+
+    <!--End time slot-->
+
+    <!--Time Slot Start-->
+    <div class="row timeSlot">
+      <div
+        class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning border-primary font-weight-bold rounded-pill  timeOfPersonalEvent">
+        <p class="text-center">17</p>
+      </div>
+      <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 border border-dark bg-info text-center personalEvent">
+        <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
+      </div>
+      <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 border bg-warning  border-secondary">
+        <button class="btn btn-info  addButton" data-target="7">Save</button>
+      </div>
     </div>
-  </div>
 
-<!--End time slot-->
-
- 
-  
+    <!--End time slot-->
 
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script>
 
 
-    
-   
 
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
 
-    //Variable holds the current date
-    var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
-    // console.log(currentDate);
-    $("#dateTime").append(currentDate);
 
-    //Variable that takes the input
-    var plannedAction = "";
-    var timeSlots = [];
-    $(".timeSlot").each(function (index, element) {
-      timeSlots.push(element);
-      // console.log(timeSlots);
-    })
-    function addEventToLocalStorage(buttonValue) {
+
+
+
+
+
+      //Variable holds the current date
+      var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+      // console.log(currentDate);
+      $("#dateTime").append(currentDate);
+
+      //Variable that takes the input
+      var plannedAction = "";
+      var timeSlots = [];
+      $(".timeSlot").each(function (index, element) {
+        timeSlots.push(element);
+        // console.log(timeSlots);
+      })
+      function addEventToLocalStorage(buttonValue) {
+
+
+        var currentButtonValue = buttonValue.dataset.target;
+        var plannedAction = timeSlots[currentButtonValue].children[1].children[0].
+          value;
+        console.log(plannedAction)
+        var plannedTime = timeSlots[currentButtonValue].children[0].children[0].textContent
+        console.log(plannedTime)
+        localStorage.setItem(currentButtonValue, plannedAction);
+
+      }
+
+
+      $(timeSlots).each(function (index, element) {
+        var timeofPersonalEvent = element.children[0].children[0];
+        var currentHour = moment().format("HH");
+
+        if (parseInt(timeofPersonalEvent.textContent) < currentHour) {
+          $(timeofPersonalEvent).addClass("past")
+
+        } else if (parseInt(timeofPersonalEvent.textContent) == currentHour) {
+          $(timeofPersonalEvent).addClass("present")
+
+        } else {
+          $(timeofPersonalEvent).addClass("future")
+        }
+      }
+      );
+
+
+
+      //Listener Event for Add
+      $(".addButton").click(function () {
+        addEventToLocalStorage(this)
+        // console.log(this)
+      })
+
+      //Grabbing local storage
+      localStorage.getItem("0")
+      console.log(localStorage.getItem("0"))
+      // Retrieve
+
+      var getValue =
+      document.getElementById(data-target("0")).innerHTML = localStorage.data("0");
       
 
-      var currentButtonValue = buttonValue.dataset.target;
-      var plannedAction = timeSlots[currentButtonValue].children[1].children[0].
-      value;
-      console.log(plannedAction)
-      var plannedTime = timeSlots[currentButtonValue].children[0].children[0].textContent
-      console.log(plannedTime)
-      localStorage.setItem(currentButtonValue, plannedAction);
-
-    }
-
-
-    $(timeSlots).each(function(index, element){
-      var timeofPersonalEvent = element.children[0].children[0];
-      var currentHour = moment().format("HH");
-     
-      if (parseInt(timeofPersonalEvent.textContent) < currentHour) {
-       $(timeofPersonalEvent).addClass("past")
-       
-      } else if (parseInt(timeofPersonalEvent.textContent) == currentHour) {
-        $(timeofPersonalEvent).addClass("present")
-      
-      }else {
-        $(timeofPersonalEvent).addClass("future")
-      }}
-    );
 
 
 
-    //Listener Event for Add
-    $(".addButton").click(function () {
-      addEventToLocalStorage(this)
-      // console.log(this)
-    })
 
 
 
-    
-    
 
-  </script>
+    </script>
 </body>
 
 </html>
 
 
-// <!-- AS AN employee with a busy schedule
+//
+<!-- AS AN employee with a busy schedule
 // I WANT to add important events to a daily planner
 // SO THAT I can manage my time effectively
 
