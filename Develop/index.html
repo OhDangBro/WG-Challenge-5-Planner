@@ -40,7 +40,7 @@
           <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="col-md-1 border border-secondary">
-          <button id="add"  class="btn btn-info">Add</button>
+          <button  class="btn btn-info addButton" data-target="0">Add</button>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
           <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="col-md-1 border border-secondary">
-          <button id="add"  class="btn btn-info">Add</button>
+          <button   class="btn btn-info addButton" data-target="1">Add</button>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@
 
       //Variable holds the current date
       var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
-      console.log(currentDate);
+      // console.log(currentDate);
       $("#dateTime").append(currentDate);
 
       //Variable that takes the input
@@ -74,19 +74,23 @@
       var timeSlots = [];
       $(".timeSlot").each(function(index,element) {
         timeSlots.push(element);
-        console.log(timeSlots);
+        // console.log(timeSlots);
       })
-      function addEventToLocalStorage() {
-        plannedAction = $(".plannedActionValue").val();
-        // console.log(plannedAction);
-        localStorage.setItem("event",plannedAction);
+      function addEventToLocalStorage(buttonValue) {
+        
+        var currentButtonValue = buttonValue.dataset.target;
+       console.log(timeSlots[currentButtonValue])
+
+        // plannedAction = $(".plannedActionValue").val();
+        // // console.log(plannedAction);
+        // localStorage.setItem("event",plannedAction);
         }
 
       
       
         //Listener Event for Add
-      $("#add").click(function() {
-        addEventToLocalStorage()
+      $(".addButton").click(function() {
+        addEventToLocalStorage(this)
       })
     </script>
   </body>
