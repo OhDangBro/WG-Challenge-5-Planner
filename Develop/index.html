@@ -32,12 +32,25 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <div class="row">
-        <div class="col-md-1 border border-primary">
+      <div class="row timeSlot">
+        <div class="col-md-1 border border-primary timeOfPersonalEvent">
           <p>One of three columns</p>
         </div>
-        <div class="col-md-10 border border-dark">
-          <input id="plannedActionValue" type="text" class="form-control" placeholder="Username">
+        <div class="col-md-10 border border-dark personalEvent">
+          <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
+        </div>
+        <div class="col-md-1 border border-secondary">
+          <button id="add"  class="btn btn-info">Add</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row timeSlot">
+        <div class="col-md-1 border border-primary timeOfPersonalEvent">
+          <p>One of three columns</p>
+        </div>
+        <div class="col-md-10 border border-dark personalEvent">
+          <input class="plannedActionValue" type="text" class="form-control" placeholder="Username">
         </div>
         <div class="col-md-1 border border-secondary">
           <button id="add"  class="btn btn-info">Add</button>
@@ -50,16 +63,28 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script>
+
+      //Variable holds the current date
       var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
       console.log(currentDate);
       $("#dateTime").append(currentDate);
 
+      //Variable that takes the input
       var plannedAction = "";
+      var timeSlots = [];
+      $(".timeSlot").each(function(index,element) {
+        timeSlots.push(element);
+        console.log(timeSlots);
+      })
       function addEventToLocalStorage() {
-        plannedAction = $("#plannedActionValue").val();
-        console.log(plannedAction);
+        plannedAction = $(".plannedActionValue").val();
+        // console.log(plannedAction);
+        localStorage.setItem("event",plannedAction);
         }
+
       
+      
+        //Listener Event for Add
       $("#add").click(function() {
         addEventToLocalStorage()
       })
