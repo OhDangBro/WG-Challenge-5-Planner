@@ -15,10 +15,10 @@
     
 </head>
 
-<body>
+<body class="color $cyan-200">
   <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <h1 class="display-3 bg-warning border-primary font-weight-bold rounded-pill text-center  ">Work Day Scheduler</h1>
+    <p class="lead bg-warning border-primary font-weight-bold rounded-pill text-center ">Your Daily Work Day in Military Time</p>
     
     <p id="dateTime"></p>
     <p id="currentDay" class="lead"></p>
@@ -90,7 +90,7 @@
  <!--Time Slot Start-->
  <div class="row timeSlot">
   <div class="col-md-1 border bg-warning border-primary font-weight-bold rounded-pill text-center timeOfPersonalEvent">
-    <p>1</p>
+    <p>13</p>
   </div>
   <div class="col-md-10 border border-dark bg-info text-center  personalEvent">
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
@@ -105,7 +105,7 @@
  <!--Time Slot Start-->
  <div class="row timeSlot">
   <div class="col-md-1 border bg-warning border-primary font-weight-bold rounded-pill text-center timeOfPersonalEvent">
-    <p>2</p>
+    <p>14</p>
   </div>
   <div class="col-md-10 border border-dark bg-info text-center personalEvent">
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
@@ -119,7 +119,7 @@
  <!--Time Slot Start-->
  <div class="row timeSlot">
   <div class="col-md-1 border bg-warning border-primary font-weight-bold rounded-pill text-center timeOfPersonalEvent">
-    <p>3</p>
+    <p>15</p>
   </div>
   <div class="col-md-10 border border-dark bg-info text-center personalEvent">
     <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
@@ -132,7 +132,7 @@
 <!--End time slot--> <!--Time Slot Start-->
     <div class="row timeSlot">
       <div class="col-md-1 border bg-warning border-primary font-weight-bold rounded-pill text-center timeOfPersonalEvent">
-        <p>4</p>
+        <p>16</p>
       </div>
       <div class="col-md-10 border border-dark bg-info text-center personalEvent">
         <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
@@ -147,7 +147,7 @@
   <!--Time Slot Start-->
   <div class="row timeSlot">
     <div class="col-md-1 border bg-warning border-primary font-weight-bold rounded-pill text-center timeOfPersonalEvent">
-      <p>5</p>
+      <p>17</p>
     </div>
     <div class="col-md-10 border border-dark bg-info text-center personalEvent">
       <input class="plannedActionValue" type="text" class="form-control" placeholder="Add your event here!">
@@ -172,20 +172,7 @@
     
    
 
-    $(timeSlots).each(function(index, element){
-      var timeofPersonalEvent = element.children[0].children[0];
-      var currentHour = moment().format("h");
-     
-      if (parseInt(timeofPersonalEvent.textContent) > currentHour) {
-       $(timeofPersonalEvent).addClass("past")
-       
-      } else if (parseInt(timeofPersonalEvent.textContent) == currentHour) {
-        $(timeofPersonalEvent).addClass("present")
-      
-      }else {
-        $(timeofPersonalEvent).addClass("future")
-      }}
-    );
+    
 
     //Variable holds the current date
     var currentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
@@ -211,6 +198,22 @@
       localStorage.setItem(currentButtonValue, plannedAction);
 
     }
+
+
+    $(timeSlots).each(function(index, element){
+      var timeofPersonalEvent = element.children[0].children[0];
+      var currentHour = moment().format("h");
+     
+      if (parseInt(timeofPersonalEvent.textContent) < currentHour) {
+       $(timeofPersonalEvent).addClass("past")
+       
+      } else if (parseInt(timeofPersonalEvent.textContent) == currentHour) {
+        $(timeofPersonalEvent).addClass("present")
+      
+      }else {
+        $(timeofPersonalEvent).addClass("future")
+      }}
+    );
 
 
 
